@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  margin: 20px;
+  background-color: #e6e8ed
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  =============================
+  Grid
+  =============================
+*/
+
+*,
+*:before,
+*after {
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+
+
+/*
+  =============================
+  Typography
+  =============================
+*/
+
+
+code {
+  background: #2cb293;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: center;
+}
+header,
+section,
+aside,
+footer {
+  margin: 0 1.5% 24px 1.5%;
+}
+section {
+  float: left;
+  width: 60%;
+  background: #6fcebb;
+  border-radius: 6px;
+  color: #e84e7f;
+  display: block;
+  font: 14px/24px "Courier New", Courier;
+  padding: 24px 15px;
+  border-radius: 25px;
+  border-style: dotted;
+  border-width: 5px;
+  border-color: #e2e228;
+}
+aside {
+  float: right;
+  width: 25%;
+  background: #6fcebb;
+  border-radius: 6px;
+  color: #e84e7f;
+  display: block;
+  font: 14px/24px "Courier New", Courier;
+  padding: 24px 15px;
+  border-radius: 25px;
+  border-style: dotted;
+  border-width: 5px;
+  border-color: #e2e228;
+}
+footer {
+  clear: both;
+  margin-bottom: 0;
+  background: #6fcebb;
+  border-radius: 6px;
+  color: #e84e7f;
+  display: block;
+  font: 14px/24px "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: left;
+  height: 25%;
+  border-radius: 25px;
+  border-style: dotted;
+  border-width: 5px;
+  border-color: #e2e228;
+
+}
+
+.banner {
+  color: #e84e7f;
+  border-radius: 25px;
+  background: #6fcebb;
+  padding: 20px; 
+  border-style: solid;
+  border-width: 7px;
+  border-color: #e2e228;
+  text-align:center;
+  margin-bottom: 22px;
+  font: 36px "Courier New", Courier;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e2e228;
+  border-radius: 15px;
+  border-width: 7px;
+  border-color: #6fcebb;
+  padding: 5px; 
+  border-style: solid;
+  font: 14px "Courier New", Courier;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a{
+  display:inline-block;
+  color: #e84e7f ;
+  text-align: center;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display:none;}
+
+
