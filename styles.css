@@ -11,11 +11,11 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+article, canvas, details, embed,
+figure, figcaption, header, hgroup,
+menu, nav, output, ruby, summary,
 time, mark, audio, video {
-  margin: 0;
+  margin: 5px;
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -23,14 +23,15 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+/*article, aside, details, figcaption, figure,
+//footer, header, hgroup, menu, nav, section {
+  //display: block;
+}*/
 body {
   line-height: 1;
-  margin: 20px;
+  margin: 0;
   background-color: #e6e8ed
+  padding: 0;
 }
 ol, ul {
   list-style: none;
@@ -63,11 +64,6 @@ table {
 }
 
 
-/*
-  =============================
-  Typography
-  =============================
-*/
 
 
 code {
@@ -79,62 +75,56 @@ code {
   padding: 24px 15px;
   text-align: center;
 }
-header,
+/*header,
 section,
 aside,
-footer {
+{
   margin: 0 1.5% 24px 1.5%;
-}
+}*/
 section {
   float: left;
   width: 60%;
-  background: #6fcebb;
+  background: #8fd7c1;
   border-radius: 6px;
   color: #e84e7f;
   display: block;
   font: 14px/24px "Courier New", Courier;
-  padding: 24px 15px;
+  padding: 24px 15px 24px 15px;
   border-radius: 25px;
-  border-style: dotted;
-  border-width: 5px;
-  border-color: #e2e228;
+  
 }
 aside {
   float: right;
   width: 25%;
-  background: #6fcebb;
+  background: #8fd7c1;
   border-radius: 6px;
   color: #e84e7f;
   display: block;
   font: 14px/24px "Courier New", Courier;
   padding: 24px 15px;
   border-radius: 25px;
-  border-style: dotted;
-  border-width: 5px;
-  border-color: #e2e228;
+  
 }
 footer {
-  clear: both;
-  margin-bottom: 0;
-  background: #6fcebb;
+clear: both;
+  margin: 0;
+  background: #8fd7c1;
   border-radius: 6px;
   color: #e84e7f;
   display: block;
   font: 14px/24px "Courier New", Courier;
   padding: 24px 15px;
   text-align: left;
-  height: 25%;
-  border-radius: 25px;
-  border-style: dotted;
-  border-width: 5px;
-  border-color: #e2e228;
+  width: 100%;
+  bottom : 0;
+  left : 0;
+  right : 0;
 
 }
 
 .banner {
   color: #e84e7f;
-  border-radius: 25px;
-  background: #6fcebb;
+  background: #8fd7c1;
   padding: 20px; 
   border-style: solid;
   border-width: 7px;
@@ -150,11 +140,7 @@ ul.topnav {
   padding: 0;
   overflow: hidden;
   background-color: #e2e228;
-  border-radius: 15px;
-  border-width: 7px;
-  border-color: #6fcebb;
   padding: 5px; 
-  border-style: solid;
   font: 14px "Courier New", Courier;
 }
 
@@ -172,5 +158,3 @@ ul.topnav li a{
 ul.topnav li a:hover {background-color: #555;}
 
 ul.topnav li.icon {display:none;}
-
-

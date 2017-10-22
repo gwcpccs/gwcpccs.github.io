@@ -5,16 +5,17 @@
 	<title>Grayslake Girls Who Code</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload = "initSections(); return false;">
+
 	<header>
-		<h1 class = banner>Grayslake Girls Who Code</h1> 
+		<h1 class = banner><img src="GWCG_logo.jpg" alt= "Girls Who Code Grayslake"></h1> 
 
 		<ul class="topnav" id="myTopnav">
-			<li><a href="GWC_Website.html">Home</a></li>
-			<li><a href="links.html">Links</a></li>
-			<li><a href="contacts.html">Contacts</a></li>
-			<li><a href="information.html">Information</a></li>
-			<li><a href="curriculum.html">Curriculum</a></li>
+			 <li><a id = "home" href="#" onclick="SwitchSection(this.id);return false;">Home</a></li>
+			<li><a id = "contacts" href="#" onclick="SwitchSection(this.id);return false;">Contacts</a></li>
+			<li><a id = "information" href="#" onclick="SwitchSection(this.id);return false;">Information</a></li>
+			<li><a id = "curriculum" href="#" onclick="SwitchSection(this.id);return false;">Curriculum</a></li>
+			<li><a id = "links" href="#" onclick="SwitchSection(this.id);return false;">Links</a></li>
 		</ul>
 	</header>
 
@@ -24,7 +25,8 @@
 		<h1 align="center">About Us?</h1>
 	</aside>
 	
-	<section>
+	 
+	<section id = "homeSection">
 		
 		<h1 align="center"> Welcome! </h1>
 		<p>We are a Grayslake based chapter of Girls Who Code, an organization focusing on teaching girls how to code! </p>
@@ -33,20 +35,123 @@
 		<h2>Cost: Free!!!</h2> 
 		<p>No coding experience necessary</p>
 		
+	
+
 	</section>
 
-	<footer>
-		<a href="https://girlswhocode.com/">
-			<img src="http://www.microsoft.com/about/philanthropies/youthspark/youthsparkhub/programs/girls-who-code/images/inventors/gwc_logo1.png"
-			style="width:80px;height: 80px; border:0;">
+	<section id = "contactsSection">
 		
-	</footer>
+		<h1 align="center"> Contacts</h1>
+		<h2> Our Club </h2>
+		<p id = "ccc"> Prairie Crossing Charter School <br> 1531 Jone Point Rd <br> Grayslake, Illinois 60030 <br> Phone number: <br> Email: </p> 
+		<h2> Other Clubs</h2>
+		<p id = "ccc"> <a href="https://girlswhocode.com/locations/" target="_blank">Other Girls Who Code Locations</a>
+	</section>
+
+	<section id="linksSection">
 	
+		<h1 align="center"> Here are some great websites for starting your journey to become a coder! </h1>
+	<h2> HTML and CSS </h2>
+		<ul style="list-style-type:none">
+  			<li><a href="https://www.khanacademy.org/computing/computer-programming/html-css">Khan Acadamy - HTML/CSS</a></li>
+  			<li><a href="https://www.w3schools.com/html/default.asp">W3schools.com - HTML</a></li>
+  			<li><a href="https://www.w3schools.com/css/default.asp">W3schools.com - CSS</a></li>
+		</ul>
+	<h2>JavaScript</h2>
+		<ul style="list-style-type:none">
+  			<li><a href="https://www.w3schools.com/js/default.asp">W3schools.com - JavaScript</a></li>
+	<h2>Python</h2>
+		<ul style="list-style-type:none">
+  			<li><a href=""></a></li>
+		
+	</section>
+
+	<section id="informationSection">
+
+	<h1 align="center">Information</h1>
+		<p id = "ccc">Add info here </p>
+
+	</section>
+
+	<section id="curriculumSection">
+
+	<h1 align="center">Curriculum</h1>
+		<p id = "ccc">Add info here </p>
+
+	</section>
+
+
+		
 	
-	</a>
+
+	<footer>
+		<a href="https://girlswhocode.com/" target="_blank">
+			<img src="http://www.microsoft.com/about/philanthropies/youthspark/youthsparkhub/programs/girls-who-code/images/inventors/gwc_logo1.png"
+			style="width:80px;height:80px;border:0;"></a>
+		<a href="https://scratch.mit.edu/" target="_blank">
+			<img src=https://cdn.scratch.mit.edu/static/site/users/avatars/1415/6156.png
+			style="width:110px;height:90px;border:0;"></a>
+		</footer>
+	
+
+<script>
+function SwitchSection(menuItem) {
+    if (menuItem == "contacts") {
+    	document.getElementById("homeSection").style.display = "none";
+    	document.getElementById("contactsSection").style.display = "block";
+    	document.getElementById("linksSection").style.display = "none";
+    	document.getElementById("informationSection").style.display = "none";
+    	document.getElementById("curriculumSection").style.display = "none";
+     }
+    else if (menuItem == "home") {
+    	document.getElementById("homeSection").style.display = "block";
+    	document.getElementById("contactsSection").style.display = "none";
+    	document.getElementById("linksSection").style.display = "none";
+    	document.getElementById("informationSection").style.display = "none";
+    	document.getElementById("curriculumSection").style.display = "none";
+     }
+
+     else if (menuItem == "links") {
+    	document.getElementById("homeSection").style.display = "none";
+    	document.getElementById("contactsSection").style.display = "none";
+    	document.getElementById("linksSection").style.display = "block";
+    	document.getElementById("informationSection").style.display = "none";
+    	document.getElementById("curriculumSection").style.display = "none";
+     }
+
+     else if (menuItem == "information") {
+    	document.getElementById("homeSection").style.display = "none";
+    	document.getElementById("contactsSection").style.display = "none";
+    	document.getElementById("linksSection").style.display = "none";
+    	document.getElementById("informationSection").style.display = "block";
+    	document.getElementById("curriculumSection").style.display = "none";
+	}
+
+	else if (menuItem == "curriculum") {
+    	document.getElementById("homeSection").style.display = "none";
+    	document.getElementById("contactsSection").style.display = "none";
+    	document.getElementById("linksSection").style.display = "none";
+    	document.getElementById("informationSection").style.display = "none";
+    	document.getElementById("curriculumSection").style.display = "block";
+	}
+
+}
+
+function initSections() {
+    	document.getElementById("homeSection").style.display = "block";
+    	document.getElementById("contactsSection").style.display = "none";
+    	document.getElementById("linksSection").style.display = "none";
+    	document.getElementById("informationSection").style.display = "none";
+    	document.getElementById("curriculumSection").style.display = "none";
+
+}
+
+</script>
+
+
+
+
 	
 </body>
 </html>
  
-
-
